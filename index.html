@@ -6,13 +6,17 @@
     <title>Album Lê Phi Hà</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap&subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav>
-        <div class="logo">Lê Phi Hà</div>
+        <a href="#home" class="logo">
+        <img src="./images/logo_lph.png" alt="Logo" class="logo-img">
+        Lê Phi Hà
+    </a>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#gallary">Gallery</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -127,17 +131,112 @@
         </div>
     </section>
 
-    <footer>
-        <p>© 2024 Artistic Portfolio. All rights reserved.</p>
-        <p>Crafted with passion and vintage vibes</p>
-        <div class="social-links">
-            <a href="#">📷</a>
-            <a href="#">✉️</a>
-            <a href="#">🎨</a>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 class="section-title">About My Albums</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/logo_lph.png" alt="Lê Phi Hà">
+                </div>
+                <div class="about-text">
+                    <h3>Lê Phi Hà</h3>
+                    <p class="about-subtitle">About This Album — by LPH</p>
+                    <p class="about-description">
+                        This collection isn’t just a series of photos —
+                        it’s a place where I keep the little things that matter.
+                        Moments that felt warm, stories I didn’t want to forget,
+                        and frames that remind me of who I was at that exact second.
+                    </p>
+                    <p class="about-description">
+                        Think of it like a personal playlist —
+                        but instead of music, it’s made of memories.
+                        Each image is a track, each scene a feeling,
+                        and together they shape a small visual story of my life.
+                    </p>
+
+                    <p class="about-description">
+                        Some shots are spontaneous, some intentional,
+                        but all of them carry a piece of me:
+                        the way I see beauty,
+                        the way I hold onto things that pass too quickly,
+                        and the way I turn everyday life into something worth keeping.
+                    </p>
+                    <p class="about-description">
+                        This album is my archive of moments —
+                        simple, honest, and meaningful.
+                        A quiet place where LPH stores the things he doesn’t want to lose.
+                    </p>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Have a project in mind? Let's create something beautiful together.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:phihasky@example.com">phihasky@example.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+84392405600">+84 392 405 600</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Hanoi, Vietnam</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                        <div class="contact-details">
+                            <h4>Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fphiha8902%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExZndwSU1jNkJPdUhMNVFrNnNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5j8gx9CIh9Za_jfWkelK6Spl8dF-ezm9Rqt0SrW5QgLbEKY0K_GnHp_MB2UA_aem_tu-mNIRi9uCHZB_BwnGTTA&h=AT1w_J8vJ_TJRGu22G9zPbVhbT5iJGcJjbvSftxsUwBivMRAL6JO2-DjW9Bj_Oqwka3TiicJKwS9Sc8n0YALvPVB--zC-3aAt7-DudVHPuay6MlSb29UTNp4GWRRlw6LZmXy" class="social-icon">Instagram</a>
+                                <a href="https://www.facebook.com/le.phi.ha.2025" class="social-icon">Facebook</a>
+                                <a href="https://www.tiktok.com/@lephiha"  class="social-icon">TikTok</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" onsubmit="sendEmail(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <script src="./js/script.js"></script>
     
 </body>
-</html>
+</html> 

@@ -41,6 +41,19 @@ window.addEventListener('scroll', () => {
     });
 });
 
+function sendEmail(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=phihasky@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message)}`;
+    
+    window.open(gmailLink, '_blank');
+}
+
 // Cursor trail effect
 let lastTrailTime = 0;
 document.addEventListener('mousemove', (e) => {
