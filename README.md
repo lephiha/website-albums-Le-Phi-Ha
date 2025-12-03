@@ -13,8 +13,9 @@ please visit the official website using the link below or simply scan the attach
 
 - Optimized mobile & desktop view
 
-🔗 Live Website: [https://your-website-link.com](https://lephiha.github.io/website-albums-Le-Phi-Ha/)
+🔗 Live Website: https://lephiha.github.io/website-albums-Le-Phi-Ha/
 
 📱 Scan the QR code to access instantly from your phone: 
+![QR](./images/QR.png)
 
 If you encounter any issues viewing the site, feel free to open an issue or contact me directly.
