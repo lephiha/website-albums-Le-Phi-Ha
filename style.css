@@ -6,10 +6,7 @@
 
 body {
     font-family: 'Inter', 'Playfair Display', serif;
-    background: 
-        radial-gradient(circle at 20% 50%, rgba(161, 98, 7, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(161, 98, 7, 0.03) 0%, transparent 50%),
-        linear-gradient(135deg, #FFF7ED 0%, #FFE4D6 100%);
+    background: #f4e4c1;
     color: #4B5563;
     overflow-x: hidden;
 }
@@ -50,6 +47,7 @@ nav {
     cursor: pointer;
     transition: transform 0.3s ease;
     text-shadow: 0 2px 8px rgba(161, 98, 7, 0.15);
+    font-weight: bold;
 }
 
 .logo:hover {
@@ -78,6 +76,8 @@ nav {
     font-size: 1rem;
     position: relative;
     transition: color 0.3s ease;
+    font-weight: bold;
+    
 }
 
 .nav-links a::after {
@@ -114,6 +114,8 @@ nav {
 .hero-content {
     max-width: 800px;
     animation: fadeInUp 1s ease-out 0.3s both;
+    position: relative;  
+    z-index: 2;
 }
 
 @keyframes fadeInUp {
@@ -131,7 +133,7 @@ nav {
     font-size: 4rem;
     color: #A16207;
     margin-bottom: 1rem;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 3px;
 }
 
@@ -140,6 +142,7 @@ nav {
     color: #4B5563;
     margin-bottom: 2rem;
     line-height: 1.8;
+    font-weight: 600;
 }
 
 .cta-button {
@@ -178,12 +181,25 @@ nav {
     box-shadow: 0 10px 30px rgba(161, 98, 7, 0.3);
 }
 
+/* Canvas for Fireworks */
+#fireworksCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    
+}
+
 /* Floating shapes */
 .floating-shape {
     position: absolute;
     border-radius: 50%;
     opacity: 0.1;
     animation: float 6s ease-in-out infinite;
+    z-index: 0;
 }
 
 @keyframes float {
