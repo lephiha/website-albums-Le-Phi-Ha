@@ -40,10 +40,27 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #A16207;
-    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-shadow: 0 2px 8px rgba(161, 98, 7, 0.15);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 3px 12px rgba(161, 98, 7, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    
 }
 
 .nav-links {
